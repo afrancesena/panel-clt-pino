@@ -1,0 +1,36 @@
+# Creamos un archivo HTML para el pasaporte digital del PANEL CLT PINO con los datos proporcionados
+
+html_content = """
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pasaporte Digital de Producto – PANEL CLT PINO</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #f9f9f9; }
+    .container { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h1 { color: #00593B; }
+    p { font-size: 1.1rem; margin-bottom: 1rem; }
+    a { color: #00593B; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Pasaporte Digital de Producto</h1>
+    <p><strong>Producto:</strong> PANEL CLT PINO</p>
+    <p><strong>Fabricante:</strong> MADERAS ASTURES SAU</p>
+    <p><strong>EPD:</strong> ES-DAP-CLT-2024-01</p>
+    <p><strong>Impacto Ambiental (GWP A1-A3):</strong> -1.10 kg CO₂ eq</p>
+    <p><strong>Fin de vida útil:</strong> Reciclable al 90%</p>
+    <p><strong>Enlace al PDF de la EPD:</strong> <a href="https://drive.google.com/drive/folders/1W4v-DPL4AZzTwXCFCJJs9YZa_d1gsZsL?usp=sharing" target="_blank">Ver documento</a></p>
+  </div>
+</body>
+</html>
+"""
+
+# Guardamos el contenido en un archivo HTML
+file_path = "/mnt/data/pasaporte_digital_panel_clt_pino.html"
+with open(file_path, "w", encoding="utf-8") as file:
+    file.write(html_content)
+
+file_path
